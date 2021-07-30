@@ -20,9 +20,15 @@ $white: #fff;
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
+
 body {
   text-align: center;
   font-family: "Lato", sans-serif;
+}
+::selection,
+::-moz-selection {
+  background: black;
+  color: white;
 }
 h1 {
   font-weight: bolder;
