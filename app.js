@@ -20,6 +20,8 @@ function BadBtn(item){
        BadReponse.classList.toggle('bad-answer-activate');
        GoodBtnO.style.opacity = 1;
        GoodBtnO.style.cursor = 'pointer';
+       GoodBtnO.style.position = 'relative';
+       GoodBtnO.style.top = '0px';
     } else {
         item.idName="on";
         console.log('badBtn Activate');
@@ -27,6 +29,8 @@ function BadBtn(item){
         BadReponse.classList.toggle('bad-answer-activate');
         GoodBtnO.style.opacity = 0;
         GoodBtnO.style.cursor = 'default';
+        GoodBtnO.style.position = 'absolute';
+        GoodBtnO.style.top = '-40px';
     }
  }
 
@@ -39,6 +43,8 @@ function GoodBtn(item){
        GoodReponse.classList.toggle('good-answer-activate');
        BadBtnO.style.opacity = 1;
        BadBtnO.style.cursor = 'pointer';
+       BadBtnO.style.position = 'relative';
+       BadBtnO.style.top = '0px';
     } else {
         item.idName="on";
         console.log('GoodBtn Activate');
@@ -46,5 +52,7 @@ function GoodBtn(item){
         GoodReponse.classList.toggle('good-answer-activate');
         BadBtnO.style.opacity = 0;
         BadBtnO.style.cursor = 'default';
+        BadBtnO.style.position = 'absolute';
+        BadBtnO.style.top = '-40px';
     }
  }
