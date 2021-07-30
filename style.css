@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+}
+
+.custom-btn {
+  width: auto;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 550;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* 9 */
+.Btn {
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.Btn:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #77b5fe;
+  /*-----couleur----*/
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.Btn:hover {
+  background: transparent;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  color: #fff;
+}
+
+.Btn:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+.bad-answer,
+.good-answer {
+  opacity: 0;
+}
+
+.bad-answer-activate {
+  background-color: red;
+  opacity: 1;
+  color: #fff;
+}
+
+.good-answer-activate {
+  background-color: green;
+  opacity: 1;
+  color: #fff;
+}
+
+.good-answer-activate-red {
+  background-color: green;
+}
+
+.bad-answer-activate-green {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

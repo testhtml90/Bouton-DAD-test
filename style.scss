@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+$bleu-ciel: #77b5fe;
+$white: #fff;
+
+@mixin custom-btn {
+  width: auto;
+  height: 40px;
+  color: $white;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 550;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-weight: bolder;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  @include custom-btn;
+}
+/* 9 */
+.Btn {
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.Btn:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $bleu-ciel; /*-----couleur----*/
+  transition: all 0.3s ease;
+}
+.Btn:hover {
+  background: transparent;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  color: #fff;
+}
+.Btn:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+//-------------------------- Bonne et mauvaise réponse --------------------------
+.bad-answer,
+.good-answer {
+  opacity: 0;
+}
+
+.bad-answer-activate {
+  background-color: red;
+  opacity: 1;
+  color: $white;
+}
+.good-answer-activate {
+  background-color: green;
+  opacity: 1;
+  color: $white;
+}
+.good-answer-activate-red {
+  background-color: green;
+}
+
+.bad-answer-activate-green {
+  background-color: red;
+}
